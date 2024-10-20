@@ -12,7 +12,10 @@
 *.out
 *.toc
 *.synctex.gz
-
+*.bcf
+*.fls
+*.xml
+*.fdb_latexmk
 
 # Archivos de configuración de LaTeX
 *.sty
