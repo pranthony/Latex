@@ -1,0 +1,136 @@
+# Archivos de compilación de LaTeX
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+*.synctex.gz
+
+
+# Archivos de configuración de LaTeX
+*.sty
+*.cls
+
+# Archivos de compilación de BibTeX
+*.bibtex
+
+# Archivos de compilación de Makefile
+Makefile
+*.make
+
+# Archivos de configuración de LaTeXmk
+latexmkrc
+
+# Archivos de configuración de TeXstudio
+texstudio.ini
+
+# Archivos de configuración de TeXworks
+texworks.ini
+
+# Archivos de configuración de Sublime Text
+.sublime-text
+
+# Archivos de configuración de Atom
+.atom
+
+# Archivos de configuración de Visual Studio Code
+.vscode
+
+# Archivos de configuración de IntelliJ IDEA
+.idea
+
+# Archivos de configuración de Eclipse
+.eclipse
+
+# Archivos de configuración de NetBeans
+.netbeans
+
+# Archivos de configuración de otros editores de texto
+*.swo
+*.swp
+*.swn
+*.swo
+
+# Archivos de configuración de otros programas
+*.tmp
+*.bak
+*.old
+*.orig
+*.rej
+*.diff
+*.patch
+*.rej
+*.orig
+*.bak
+*.tmp
+*.swp
+*.swo
+*.swn
+*.swo
+
+# Archivos de configuración de otros programas
+*.exe
+*.zip
+*.rar
+*.tar
+*.gz
+*.bz2
+*.xz
+*.lzma
+*.7z
+*.jar
+*.war
+*.ear
+*.apk
+*.ipa
+*.deb
+*.rpm
+*.pkg
+*.dmg
+*.iso
+*.img
+*.bin
+*.sh
+*.bat
+*.cmd
+*.ps1
+*.psm1
+*.vbs
+*.js
+*.html
+*.css
+*.php
+*.asp
+*.aspx
+*.jsp
+*.jspx
+*.py
+*.java
+*.class
+*.jar
+*.war
+*.ear
+*.apk
+*.ipa
+*.deb
+*.rpm
+*.pkg
+*.dmg
+*.iso
+*.img
+*.bin
+*.sh
+*.bat
+*.cmd
+*.ps1
+*.psm1
+*.vbs
+*.js
+ ⬤

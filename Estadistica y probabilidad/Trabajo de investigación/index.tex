@@ -1,0 +1,232 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{csquotes}
+\usepackage[style=apa,backend=biber]{biblatex}
+\addbibresource{referencias.bib}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{amssymb}
+\usepackage[left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm]{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{pgf-pie}
+\usepackage{booktabs}
+% Configuración de APA 7ma edición
+
+\setlength{\parindent}{0.5in}
+\titleformat*{\section}{\normalfont\bfseries}
+\titleformat*{\subsection}{\normalfont\bfseries}
+\titleformat*{\subsubsection}{\normalfont\bfseries}
+\pgfplotsset{compat=1.18}
+
+
+\begin{document}
+\onehalfspacing
+
+\begin{titlepage}
+    \begin{center}
+        \vspace{0.5in}
+        \small “Año del Bicentenario, de la consolidación de nuestra Independencia, y de la conmemoración de las heroicas batallas de Junín y Ayacucho”
+  
+        
+        \Large Universidad Nacional Hermilio Valdizan
+        
+        \Large Facultad de Economía
+        
+        \vspace{0.5cm}
+        
+        \begin{figure}[h!]
+            \begin{center}
+                \includegraphics[width=0.40\textwidth]{images/unheval.jpg}
+                \hspace{0.5cm}  
+                \includegraphics[width=0.45\textwidth]{images/economia.png}
+            \end{center}
+        \end{figure}
+        
+        \Large{Innovación digital y su impacto en el rendimiento académico de los estudiantes de economía de la Unheval (2024-1)}
+        \vspace{0.5cm}
+
+        \large\textbf{Docente:}
+
+        \large\textbf\author{Cueva Laguna, Jeel E. }
+        
+
+        \large\textbf{Autores:}
+
+        \large\textbf\author{Chavez Huaranga, Jorge}
+
+        \large\textbf\author{Chuquiyauri Tordecillo, Ronaldhino M.}
+
+        \large\textbf\author{Nieto Serpa, Luis}
+
+        \large\textbf\author{Palomino Ricaldi, Antony R.}        
+        
+        \large\textbf\author{Rojas Benancio, Delsy}
+
+        \large\textbf\author{Valentín Baquerizo, Dan Jhu Ali}
+        
+        \large\textbf\author{Villanueva Herrera, Tony}
+        
+        \vspace{0.5cm}
+        
+        \Large Huánuco - Perú 
+        
+        \large 2024
+    \end{center}
+\end{titlepage}
+
+
+\tableofcontents
+\newpage
+
+\section{Introducción}
+
+En la era digital contemporánea, las Tecnologías de la Información y Comunicación (TIC) han transformado profundamente la manera en que se accede, procesa y transmite la información en todos los ámbitos de la sociedad. El sector educativo, particularmente la educación superior, no ha sido ajeno a esta revolución tecnológica \parencite{Castells2010}. La incorporación de las TIC en los procesos de enseñanza-aprendizaje ha generado nuevas oportunidades y desafíos para estudiantes y docentes, redefiniendo las dinámicas educativas tradicionales y abriendo paso a modelos pedagógicos innovadores \parencite{Selwyn2016}.
+
+En el contexto específico de la educación económica, la relevancia de las TIC adquiere una dimensión adicional. La economía global, cada vez más interconectada y dependiente de la tecnología, demanda profesionales capaces de manejar herramientas digitales avanzadas para el análisis de datos, la modelización económica y la toma de decisiones basada en evidencia \parencite{Becker2019}. Esta realidad plantea interrogantes cruciales sobre la preparación de los futuros economistas en un entorno académico que debe adaptarse constantemente a las exigencias del mercado laboral y a la evolución tecnológica.
+
+La Facultad de Economía de la Universidad Nacional Hermilio Valdizán (Unheval), como institución formadora de los futuros actores económicos, se enfrenta al reto de proporcionar una educación que no solo abarque los fundamentos teóricos de la disciplina, sino que también desarrolle las competencias digitales necesarias para el éxito profesional en el siglo XXI \parencite{Fichman2014}. En este sentido, resulta imperativo comprender en profundidad cómo los estudiantes de economía utilizan y acceden a las TIC, tanto en su vida académica como en su preparación para el mundo laboral.
+
+La justificación de esta investigación radica en varios aspectos fundamentales. En primer lugar, existe una brecha significativa en la literatura actual sobre el uso específico de las TIC en la educación económica superior. Mientras que numerosos estudios han abordado la integración tecnológica en la educación en general \parencite{Tondeur2017}, pocos se han centrado en las particularidades de la formación económica y su relación con las competencias digitales requeridas en el campo profesional.
+
+Además, la rapidez con la que evolucionan las tecnologías y las prácticas digitales en el ámbito económico hace necesario un monitoreo constante de las tendencias de uso y acceso a las TIC por parte de los estudiantes. Esta información es crucial para que las instituciones educativas puedan adaptar sus currículos, infraestructuras y métodos de enseñanza de manera oportuna y efectiva \parencite{Kirkwood2014}.
+
+Por otra parte, la creciente preocupación por la equidad en el acceso a la educación digital añade otra capa de relevancia a esta investigación. Las disparidades en el acceso y uso de las TIC pueden exacerbar las desigualdades existentes en el rendimiento académico y las oportunidades profesionales futuras \parencite{Warschauer2010}. Comprender estas dinámicas en el contexto específico de la Facultad de Economía permitirá desarrollar estrategias más efectivas para garantizar una educación inclusiva y equitativa en la era digital.
+
+La pandemia de COVID-19 ha puesto de manifiesto, más que nunca, la importancia crítica de las competencias digitales en la educación superior. El repentino cambio a modalidades de enseñanza en línea y mixtas ha revelado tanto las fortalezas como las debilidades en la preparación digital de instituciones y estudiantes \parencite{Hodges2020}. Esta coyuntura ofrece una oportunidad única para examinar cómo los estudiantes de economía se han adaptado a estas nuevas realidades y qué implicaciones tiene esto para el futuro de la educación económica.
+
+En este contexto, la presente investigación se propone responder a la siguiente pregunta principal: ¿Cuáles son los patrones de uso y acceso a las Tecnologías de la Información y Comunicación (TIC) entre los estudiantes de la Facultad de Economía, y cómo se relacionan estos con su rendimiento académico y el desarrollo de competencias digitales relevantes para su futuro profesional?
+
+Para abordar esta pregunta, se plantea un estudio cuantitativo que explorará múltiples dimensiones del uso de las TIC, incluyendo pero no limitándose a: frecuencia y tipo de uso de dispositivos tecnológicos, acceso a recursos digitales académicos, utilización de software especializado en economía, participación en plataformas de aprendizaje en línea, y percepción de la importancia de las competencias digitales para su formación y futuro profesional.
+
+Los resultados de esta investigación no solo contribuirán a llenar un vacío importante en la literatura sobre educación económica y tecnología, sino que también proporcionarán información valiosa para la toma de decisiones institucionales. Estos hallazgos podrán informar el diseño de políticas educativas, la actualización de currículos, la inversión en infraestructura tecnológica y el desarrollo de programas de apoyo para mejorar las competencias digitales de los estudiantes \parencite{Ala-Mutka2011}.
+
+En última instancia, este estudio aspira a contribuir a la formación de economistas mejor preparados para enfrentar los desafíos de un mundo cada vez más digitalizado, donde las competencias tecnológicas son tan cruciales como el conocimiento teórico de la disciplina. Al proporcionar una comprensión profunda de la relación entre los estudiantes de economía y las TIC, esta investigación sentará las bases para una educación económica más adaptada a las necesidades del siglo XXI, fomentando la innovación, la competitividad y el éxito profesional de los futuros graduados.
+
+\section{Marco Teórico}
+
+El estudio del uso y acceso a las Tecnologías de la Información y Comunicación (TIC) en la educación superior, particularmente en el ámbito de la economía, se sustenta en un cuerpo teórico amplio y multidisciplinario. Este marco teórico busca proporcionar una base sólida para comprender las complejas interacciones entre la tecnología, el aprendizaje y el desarrollo de competencias en el contexto específico de la formación económica.
+
+\subsection{Teorías del Aprendizaje y TIC}
+
+La integración de las TIC en la educación superior se fundamenta en diversas teorías del aprendizaje que han evolucionado para incorporar la dimensión tecnológica. El constructivismo social, propuesto por Vygotsky y desarrollado por teóricos contemporáneos, ofrece un marco útil para entender cómo las TIC pueden facilitar la construcción del conocimiento a través de la interacción social y la colaboración \parencite{Siemens2005}. En este contexto, las plataformas digitales y las herramientas de comunicación en línea se convierten en mediadores del aprendizaje, permitiendo a los estudiantes de economía construir conocimiento a través de la interacción con sus pares, expertos y recursos digitales.
+
+Por otro lado, la teoría del conectivismo, propuesta por Siemens, argumenta que el aprendizaje en la era digital ocurre a través de conexiones dentro de redes \parencite{Siemens2005}. Esta perspectiva es particularmente relevante para la educación económica, donde la capacidad de navegar y sintetizar información de diversas fuentes digitales es crucial para comprender los complejos sistemas económicos globales.
+
+\subsection{Modelos de Adopción Tecnológica en Educación}
+
+La comprensión de cómo los estudiantes y las instituciones adoptan y utilizan las TIC se ha beneficiado de varios modelos teóricos. El Modelo de Aceptación Tecnológica (TAM, por sus siglas en inglés), propuesto por Davis, sugiere que la utilidad percibida y la facilidad de uso son factores clave en la adopción de nuevas tecnologías \parencite{Davis1989}. Este modelo ha sido aplicado extensamente en estudios sobre la adopción de tecnologías educativas en la educación superior, incluyendo el ámbito de la economía \parencite{Abdullah2016}.
+
+Complementando el TAM, la Teoría Unificada de Aceptación y Uso de Tecnología (UTAUT) de Venkatesh et al. incorpora factores adicionales como la influencia social y las condiciones facilitadoras \parencite{Venkatesh2003}. Estos modelos proporcionan un marco para entender las variables que influyen en la adopción y uso efectivo de las TIC por parte de los estudiantes de economía, desde software especializado hasta plataformas de aprendizaje en línea.
+
+\subsection{Competencias Digitales en Educación Superior}
+
+El concepto de competencias digitales ha ganado prominencia en la literatura sobre educación superior y TIC. El marco DigComp 2.1, desarrollado por la Comisión Europea, ofrece una taxonomía comprehensiva de las competencias digitales necesarias en la sociedad actual \parencite{Carretero2017}. Este marco identifica cinco áreas clave: información y alfabetización informacional, comunicación y colaboración, creación de contenido digital, seguridad, y resolución de problemas.
+
+En el contexto específico de la educación económica, las competencias digitales adquieren matices particulares. La capacidad de utilizar software de análisis estadístico, modelización económica y visualización de datos se vuelve crucial \parencite{Becker2019}. Además, la habilidad para acceder, evaluar y utilizar datos económicos de fuentes digitales se considera una competencia fundamental para los futuros economistas \parencite{Allgood2015}.
+
+\subsection{TIC y Rendimiento Académico}
+
+La relación entre el uso de TIC y el rendimiento académico ha sido objeto de numerosos estudios, con resultados mixtos. Algunos investigadores han encontrado correlaciones positivas entre el uso apropiado de tecnologías educativas y el desempeño académico \parencite{Rodríguez2017}. Sin embargo, otros estudios sugieren que la relación es más compleja y depende de factores como la calidad del uso, la integración pedagógica y las características individuales de los estudiantes \parencite{Bulman2016}.
+
+En el campo de la educación económica, estudios específicos han explorado cómo el uso de simulaciones económicas basadas en TIC, plataformas de aprendizaje adaptativo y herramientas de análisis de datos pueden mejorar la comprensión de conceptos económicos complejos y el desarrollo de habilidades analíticas \parencite{Jang2018}.
+
+\subsection{Brecha Digital y Equidad en la Educación Superior}
+
+El concepto de brecha digital ha evolucionado desde una preocupación inicial por el acceso físico a las tecnologías hacia un enfoque más matizado que considera las desigualdades en las habilidades digitales y los patrones de uso \parencite{VanDijk2020}. En el contexto de la educación superior en economía, la brecha digital puede manifestarse no solo en términos de acceso a dispositivos y software especializado, sino también en la capacidad de utilizar efectivamente estas herramientas para el aprendizaje y la investigación económica.
+
+La teoría del capital tecnológico, propuesta por Selwyn, ofrece un marco para entender cómo las desigualdades en el acceso y uso de las TIC pueden traducirse en ventajas o desventajas educativas y profesionales \parencite{Selwyn2004}. Este enfoque es particularmente relevante en la educación económica, donde las competencias digitales avanzadas pueden tener un impacto significativo en las oportunidades laborales futuras.
+
+\subsection{Pedagogía Digital en Economía}
+
+La integración efectiva de las TIC en la educación económica requiere un replanteamiento de las prácticas pedagógicas tradicionales. El modelo TPACK (Technological Pedagogical Content Knowledge) proporciona un marco para entender la interacción compleja entre el conocimiento tecnológico, pedagógico y del contenido que los educadores necesitan para integrar efectivamente la tecnología en su enseñanza \parencite{Mishra2006}.
+
+En el contexto de la educación económica, esto implica no solo la incorporación de herramientas digitales, sino también el desarrollo de nuevos enfoques pedagógicos que aprovechen las capacidades únicas de estas tecnologías. Por ejemplo, el uso de big data y análisis en tiempo real para ilustrar conceptos económicos, o la utilización de plataformas de colaboración en línea para simular negociaciones económicas internacionales \parencite{Watts2017}.
+
+\subsection{Impacto de la Pandemia COVID-19 en el Uso de TIC en Educación Superior}
+
+La pandemia de COVID-19 ha acelerado dramáticamente la adopción de TIC en la educación superior, forzando una transición rápida a modalidades de enseñanza en línea y mixtas. Este cambio repentino ha puesto de manifiesto tanto las oportunidades como los desafíos de la educación digital a gran escala \parencite{Hodges2020}.
+
+En el ámbito de la educación económica, la pandemia ha resaltado la importancia de las competencias digitales no solo para el aprendizaje académico, sino también como una habilidad esencial para la adaptabilidad profesional en un mundo económico cada vez más digitalizado y volátil \parencite{Blundell2020}.
+
+Este marco teórico proporciona una base sólida para explorar el uso y acceso a las TIC por parte de los estudiantes de la Facultad de Economía. Al integrar perspectivas desde las teorías del aprendizaje, los modelos de adopción tecnológica, las competencias digitales, y las consideraciones sobre equidad y pedagogía, se establece un contexto rico para interpretar los hallazgos empíricos de la investigación propuesta.
+
+\section{Metodología}
+
+\subsection{Enfoque y Diseño de la Investigación}
+
+La presente investigación se enmarca en un enfoque cuantitativo, con un nivel exploratorio y un diseño no experimental. El enfoque cuantitativo permite la recolección y análisis de datos numéricos para probar hipótesis y establecer patrones de comportamiento en la población estudiada \parencite{Creswell2018}. El nivel exploratorio se justifica por la naturaleza del problema de investigación, que busca examinar un tema poco estudiado en el contexto específico de los estudiantes de economía y su relación con las TIC \parencite{Hernandez2014}.
+
+El diseño no experimental se adopta debido a que no se manipularán deliberadamente las variables independientes, sino que se observarán los fenómenos en su contexto natural para analizarlos posteriormente \parencite{Kerlinger2002}. Además, se considera un diseño transversal, ya que la recolección de datos se realizará en un único momento temporal \parencite{Kumar2019}.
+
+\subsection{Población y Muestra}
+
+La población objetivo de este estudio comprende a todos los estudiantes matriculados en la Facultad de Economía de la Unheval durante el período académico 2024-1. Para la selección de la muestra, se utilizará un muestreo aleatorio estratificado, asegurando una representación adecuada de los diferentes años de estudio y programas específicos dentro de la facultad \parencite{Cochran2007}.
+
+El tamaño de la muestra se determinará utilizando la fórmula para poblaciones finitas, con un nivel de confianza del 95\% y un margen de error del 5\%. La fórmula utilizada será:
+
+\[n = \frac{N \cdot Z_\alpha^2 \cdot p \cdot q}{e^2 \cdot (N-1) + Z_\alpha^2 \cdot p \cdot q}\]
+
+Donde:
+\begin{itemize}
+    \item $n$ = Tamaño de la muestra
+    \item $N$ = Tamaño de la población
+    \item $Z_\alpha$ = Valor correspondiente al nivel de confianza elegido
+    \item $p$ = Proporción esperada (en este caso 50\% = 0.5)
+    \item $q$ = 1 - $p$ (en este caso 1 - 0.5 = 0.5)
+    \item $e$ = Precisión o error máximo admisible
+\end{itemize}
+
+\subsection{Instrumentos de Recolección de Datos}
+
+Para la recolección de datos, se utilizará un cuestionario estructurado en línea, diseñado específicamente para esta investigación. El cuestionario abordará las siguientes dimensiones principales:
+
+\begin{enumerate}
+    \item Datos demográficos y académicos
+    \item Acceso a dispositivos y conectividad
+    \item Frecuencia y tipo de uso de TIC en actividades académicas
+    \item Competencias digitales autopercibidas
+    \item Actitudes hacia el uso de TIC en la educación económica
+    \item Rendimiento académico autoreportado
+\end{enumerate}
+
+El cuestionario se someterá a un proceso de validación de contenido mediante el juicio de expertos en el área de educación, economía y tecnología educativa \parencite{Lawshe1975}. Además, se realizará una prueba piloto con un grupo reducido de estudiantes para evaluar la claridad de las preguntas y la fiabilidad del instrumento, utilizando el coeficiente alfa de Cronbach para medir la consistencia interna \parencite{Cronbach1951}.
+
+\subsection{Procedimiento de Recolección de Datos}
+
+La recolección de datos se llevará a cabo mediante la distribución del cuestionario en línea a través de la plataforma educativa de la universidad y por correo electrónico institucional. Se implementarán recordatorios periódicos para maximizar la tasa de respuesta. El período de recolección de datos se extenderá por 2 semanas, permitiendo a los estudiantes completar el cuestionario en el momento que les resulte más conveniente.
+
+\subsection{Análisis de Datos}
+
+El análisis estadístico de los datos se realizará utilizando Python, aprovechando las bibliotecas especializadas para análisis de datos y visualización, como pandas, numpy, scipy, y matplotlib \parencite{McKinney2017}. La elección de Python se basa en su versatilidad, capacidad de manejo de grandes conjuntos de datos y la posibilidad de implementar análisis estadísticos avanzados \parencite{VanderPlas2016}.
+
+El proceso de análisis de datos incluirá las siguientes etapas:
+
+\begin{enumerate}
+    \item Preparación y limpieza de datos: Utilizando pandas para la manipulación de datos y detección de valores atípicos o faltantes.
+    \item Análisis descriptivo: Cálculo de estadísticas descriptivas (medias, medianas, desviaciones estándar) y generación de visualizaciones para comprender la distribución de las variables.
+    \item Análisis inferencial: Aplicación de pruebas estadísticas como correlaciones, pruebas t, ANOVA, y regresiones múltiples para explorar relaciones entre variables.
+    \item Análisis de conglomerados: Utilización de técnicas de machine learning no supervisado para identificar patrones en el uso de TIC entre los estudiantes.
+    \item Visualización de resultados: Creación de gráficos y visualizaciones interactivas para representar los hallazgos de manera clara y efectiva.
+\end{enumerate}
+
+Se utilizará el nivel de significancia estándar de $\alpha = 0.05$ para todas las pruebas estadísticas. Los resultados se interpretarán en el contexto de la literatura existente y las teorías presentadas en el marco teórico.
+
+\subsection{Consideraciones Éticas}
+
+La investigación se llevará a cabo siguiendo estrictos principios éticos. Se obtendrá el consentimiento informado de todos los participantes antes de su inclusión en el estudio. La participación será voluntaria y anónima, y los datos recolectados se utilizarán exclusivamente para fines de investigación. 
+
+Además, se tomarán medidas para garantizar la confidencialidad y seguridad de los datos recolectados, incluyendo el almacenamiento en servidores seguros y la eliminación de cualquier información que pueda identificar individualmente a los participantes.
+
+Esta metodología proporciona un enfoque sistemático y riguroso para abordar los objetivos de la investigación, permitiendo una exploración profunda del uso y acceso a las TIC entre los estudiantes de economía, así como su relación con las competencias digitales y el rendimiento académico.
+
+
+\newpage
+\printbibliography
+
+\end{document}
