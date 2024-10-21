@@ -117,7 +117,7 @@ text(marca_de_clase,
 media_empresas = mean(datos_empresas)
 mediana_empresas = median(datos_empresas)
 
-moda_empresas =  as.numeric(names(sort(table(datos), decreasing = TRUE)[1]))
+moda_empresas =  as.numeric(names(sort(table(datos_empresas), decreasing = TRUE)[1]))
 
 # Agrupados
 
