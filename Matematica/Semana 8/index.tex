@@ -1,0 +1,287 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage[left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm]{geometry}
+\usepackage{setspace}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\title{Funciones exponenciales}
+\author{Antony, Ronaldhino, Delsy, Tony, Luis Caldas}
+\date{\today}
+\maketitle
+
+\section{Interes compuesto}
+
+Se invierten 10 000 dólares a una tasa de interés de 3\% al año, capitalizada semestralmente, encuentre el valor de la inversión después del número dado de años.
+
+\begin{itemize}
+    \item Para \( t = 5 \) años:
+
+    \[
+    A = 10000 \left( 1 + \frac{0.03}{2} \right)^{2 \times 5} = 10000 \left( 1 + 0.015 \right)^{10} = 10000 \times (1.015)^{10} = 10000 \times 1.1609 = 11609
+    \]
+
+    \item Para \( t = 10 \) años:
+
+    \[
+    A = 10000 \left( 1 + \frac{0.03}{2} \right)^{2 \times 10} = 10000 \times (1.015)^{20} = 10000 \times 1.3449 = 13449
+    \]
+
+    \item Para \( t = 15 \) años:
+
+    \[
+    A = 10000 \left( 1 + \frac{0.03}{2} \right)^{2 \times 15} = 10000 \times (1.015)^{30} = 10000 \times 1.5560 = 15560
+    \]
+\end{itemize}
+
+\section{Depreciación acelerada de un activo}
+
+Una empresa adquiere maquinaria por un valor inicial de \$100,000. Debido al desgaste acelerado y a los avances tecnológicos, el valor de la maquinaria disminuye exponencialmente con el tiempo. Se estima que la tasa de depreciación es del 15\% anual.
+
+Se quiere determinar el valor de la maquinaria después de 5 años.
+
+\textbf{Fórmula}
+La depreciación de un activo se puede modelar mediante la siguiente fórmula exponencial:
+
+\[
+V(t) = V_0 \cdot e^{-kt}
+\]
+
+Donde:
+\begin{itemize}
+    \item \( V(t) \) es el valor del activo en el tiempo \( t \),
+    \item \( V_0 \) es el valor inicial del activo,
+    \item \( k \) es la tasa de depreciación anual (en términos decimales),
+    \item \( t \) es el tiempo en años.
+\end{itemize}
+
+\textbf{Pregunta}
+¿Cuál será el valor de la maquinaria después de 5 años?
+
+\textbf{Datos}
+\begin{itemize}
+    \item Valor inicial \( V_0 = 100,000 \) dólares.
+    \item Tasa de depreciación \( k = 0.15 \).
+    \item Tiempo \( t = 5 \) años.
+\end{itemize}
+
+\textbf{Solución}
+Aplicamos la fórmula y sustituimos los valores conocidos para calcular \( V(5) \), el valor de la maquinaria después de 5 años:
+
+\[
+V(5) = 100,000 \cdot e^{-0.15 \cdot 5} = 100,000 \cdot e^{-0.75}
+\]
+
+Calculando el valor aproximado de \( e^{-0.75} \):
+
+\[
+V(5) \approx 100,000 \cdot 0.4724 = 47,240
+\]
+
+Por lo tanto, el valor de la maquinaria después de 5 años será aproximadamente \$47,240.
+
+\section{Difusión de una nueva tecnología en el mercado}
+
+Una empresa tecnológica lanza un nuevo producto al mercado, y la adopción de este producto por parte de los consumidores sigue un patrón de difusión tecnológica, donde el número de usuarios adopta la tecnología de manera exponencial. Se estima que la tasa de adopción es del 25\% mensual.
+
+\textbf{Fórmula}
+
+La difusión de una nueva tecnología puede modelarse con la siguiente función exponencial:
+
+\[
+U(t) = U_{\infty} \cdot \left(1 - e^{-kt}\right)
+\]
+
+Donde:
+\begin{itemize}
+    \item \( U(t) \) es el número de usuarios que han adoptado la tecnología después de \( t \) meses,
+    \item \( U_{\infty} \) es el número máximo de usuarios que potencialmente podrían adoptar la tecnología (el mercado total),
+    \item \( k \) es la tasa de adopción mensual,
+    \item \( t \) es el tiempo en meses.
+\end{itemize}
+
+\textbf{Pregunta}
+
+¿Cuántos usuarios habrán adoptado la tecnología después de 6 meses si el mercado total es de 500,000 usuarios?
+
+\textbf{Datos}
+
+\begin{itemize}
+    \item \( U_{\infty} = 500,000 \) usuarios.
+    \item Tasa de adopción \( k = 0.25 \) (25\% mensual).
+    \item Tiempo \( t = 6 \) meses.
+\end{itemize}
+
+\textbf{Solución}
+
+Sustituyendo los valores en la fórmula:
+
+\[
+U(6) = 500,000 \cdot \left(1 - e^{-0.25 \cdot 6}\right)
+\]
+
+Calculamos \( e^{-0.25 \cdot 6} \):
+
+\[
+U(6) = 500,000 \cdot \left(1 - e^{-1.5}\right) = 500,000 \cdot \left(1 - 0.2231\right)
+\]
+
+\[
+U(6) = 500,000 \cdot 0.7769 = 388,450
+\]
+
+Por lo tanto, el número de usuarios que habrán adoptado la tecnología después de 6 meses será aproximadamente 388,450 usuarios.
+
+\section{Equilibrio en un mercado con competencia entre dos productos}
+
+En un mercado competitivo, dos productos \( A \) y \( B \) compiten por el mismo grupo de consumidores. Se ha determinado que las ventas del producto \( A \) están decayendo exponencialmente debido al éxito de un nuevo producto \( B \). La cantidad de ventas del producto \( A \) sigue la ecuación:
+
+\[
+S_A(t) = S_{A_0} \cdot e^{-kt}
+\]
+
+Mientras que las ventas del producto \( B \) crecen exponencialmente de la siguiente manera:
+
+\[
+S_B(t) = S_{B_0} \cdot e^{kt}
+\]
+
+Donde:
+\begin{itemize}
+    \item \( S_A(t) \) es el número de ventas del producto \( A \) en el tiempo \( t \),
+    \item \( S_B(t) \) es el número de ventas del producto \( B \) en el tiempo \( t \),
+    \item \( S_{A_0} \) y \( S_{B_0} \) son las ventas iniciales de los productos \( A \) y \( B \), respectivamente,
+    \item \( k \) es la tasa de cambio en las ventas (positiva para \( B \) y negativa para \( A \)),
+    \item \( t \) es el tiempo en meses.
+\end{itemize}
+
+\textbf{Pregunta}
+
+¿Cuándo las ventas de ambos productos serán iguales? Es decir, ¿en qué momento \( t \) se cumple que \( S_A(t) = S_B(t) \)?
+
+\textbf{Datos}
+\begin{itemize}
+    \item Ventas iniciales de \( A \): \( S_{A_0} = 100,000 \),
+    \item Ventas iniciales de \( B \): \( S_{B_0} = 10,000 \),
+    \item Tasa de cambio \( k = 0.2 \) (20\% mensual).
+\end{itemize}
+
+\textbf{Solución}
+
+Para encontrar el tiempo \( t \) en que las ventas de ambos productos serán iguales, resolvemos la siguiente ecuación:
+
+\[
+S_{A_0} \cdot e^{-kt} = S_{B_0} \cdot e^{kt}
+\]
+
+Sustituyendo los valores conocidos:
+
+\[
+100,000 \cdot e^{-0.2t} = 10,000 \cdot e^{0.2t}
+\]
+
+Dividimos ambos lados por 10,000 para simplificar:
+
+\[
+10 \cdot e^{-0.2t} = e^{0.2t}
+\]
+
+Aplicamos logaritmos naturales a ambos lados para despejar \( t \):
+
+\[
+\ln(10 \cdot e^{-0.2t}) = \ln(e^{0.2t})
+\]
+
+Usando las propiedades de logaritmos:
+
+\[
+\ln(10) + \ln(e^{-0.2t}) = 0.2t
+\]
+
+\[
+\ln(10) - 0.2t = 0.2t
+\]
+
+Sumamos \( 0.2t \) a ambos lados:
+
+\[
+\ln(10) = 0.4t
+\]
+
+Despejamos \( t \):
+
+\[
+t = \frac{\ln(10)}{0.4}
+\]
+
+Calculamos el valor numérico:
+
+\[
+t \approx \frac{2.3026}{0.4} = 5.7565
+\]
+
+Por lo tanto, las ventas de los dos productos serán iguales aproximadamente a los 5.76 meses.
+
+\section{Inflación acumulada sobre el precio de un producto}
+
+El precio de un bien en el mercado está subiendo a una tasa de inflación constante del 6\% mensual. El precio actual del bien es de \$200. El gobierno planea intervenir para estabilizar los precios y estima que en 12 meses el precio del bien no debe superar los \$400.
+
+\textbf{Fórmula}
+
+El precio del bien con el paso del tiempo se puede modelar mediante la siguiente ecuación exponencial:
+
+\[
+P(t) = P_0 \cdot (1 + r)^t
+\]
+
+Donde:
+\begin{itemize}
+    \item \( P(t) \) es el precio del bien después de \( t \) meses,
+    \item \( P_0 \) es el precio inicial del bien,
+    \item \( r \) es la tasa de inflación mensual (en términos decimales),
+    \item \( t \) es el tiempo en meses.
+\end{itemize}
+
+\textbf{Pregunta}
+
+¿Será necesario intervenir en los precios o el bien alcanzará los \$400 en menos de 12 meses?
+
+\textbf{Datos}
+
+\begin{itemize}
+    \item Precio inicial \( P_0 = 200 \) dólares,
+    \item Tasa de inflación mensual \( r = 0.06 \),
+    \item Tiempo objetivo \( t = 12 \) meses,
+    \item Precio límite \( P(t) = 400 \) dólares.
+\end{itemize}
+
+\textbf{Solución}
+
+Sustituimos los valores en la fórmula:
+
+\[
+P(12) = 200 \cdot (1 + 0.06)^{12}
+\]
+
+Calculamos el valor de \( (1 + 0.06)^{12} \):
+
+\[
+P(12) = 200 \cdot (1.06)^{12}
+\]
+
+Calculamos el valor de \( (1.06)^{12} \):
+
+\[
+(1.06)^{12} \approx 2.0122
+\]
+
+Multiplicamos por 200:
+
+\[
+P(12) \approx 200 \cdot 2.0122 = 402.44
+\]
+
+Como el precio en 12 meses es aproximadamente \$402.44, que supera los \$400, será necesario intervenir en los precios.
+
+\end{document}

@@ -1,0 +1,353 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage[margin=2.54cm]{geometry}
+\usepackage{setspace}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\title{Funciones exponenciales}
+\author{Antony, Ronaldhino, Delsy, Tony, Luis Caldas}
+\date{\today}
+\maketitle
+\section*{Problema 1: Crecimiento de ventas}
+
+Una empresa en el Departamento de Huánuco, está analizando el crecimiento de sus ventas en función del tiempo. La empresa ha notado que sus ventas se pueden modelar mediante la siguiente función logarítmica:
+
+\[
+V(t) = 100 \cdot \log(t + 1)
+\]
+
+donde \(V(t)\) representa las ventas en nuevos soles y \(t\) es el tiempo en meses desde que se lanzó el producto.
+
+
+\begin{enumerate}
+    \item ¿Cuáles serán las ventas de la empresa después de 6 meses?
+    \item ¿En qué mes las ventas alcanzarán 200 nuevos soles?
+\end{enumerate}
+
+\section*{Solución}
+
+\subsection*{1. Cálculo de las ventas después de 6 meses}
+
+Para encontrar las ventas después de 6 meses, sustituimos \(t = 6\) en la función:
+
+\[
+V(6) = 100 \cdot \log(6 + 1) = 100 \cdot \log(7)
+\]
+
+Usando una calculadora, sabemos que \(\log(7) \approx 0.8451\):
+
+\[
+V(6) = 100 \cdot 0.8451 \approx 84.51
+\]
+
+Por lo tanto, las ventas después de 6 meses serán aproximadamente 84.51 nuevos soles.
+
+\subsection*{2. Cálculo del mes en que las ventas alcanzan 200 nuevos soles}
+
+Para encontrar el mes en que las ventas alcanzan 200 nuevos soles, igualamos la función a 200:
+
+\[
+200 = 100 \cdot \log(t + 1)
+\]
+
+Dividimos ambos lados por 100:
+
+\[
+2 = \log(t + 1)
+\]
+
+Ahora, aplicamos la función inversa del logaritmo (potenciación):
+
+\[
+t + 1 = 10^2
+\]
+
+Simplificando:
+
+\[
+t + 1 = 100 \quad \Rightarrow \quad t = 99
+\]
+
+Por lo tanto, las ventas alcanzarán los 200 nuevos soles después de 99 meses.
+
+\section*{Problema 2: Costo de Producción}
+
+Una compañía manufacturera encuentra que el costo de producir \(x\) unidades por hora está dado por la fórmula:
+
+\[
+C(x) = 5 + 10 \cdot \log(1 + 2x)
+\]
+
+Calcule:
+
+\begin{itemize}
+    \item a) El costo de producir 5 unidades por hora.
+\end{itemize}
+
+\section*{Solución}
+
+Para resolver el problema, utilizaremos la función de costo dada:
+
+\[
+C(x) = 5 + 10 \cdot \log(1 + 2x)
+\]
+
+\subsection*{a) Costo de producir 5 unidades por hora}
+
+Sustituyendo \(x = 5\) en la fórmula:
+
+\[
+C(5) = 5 + 10 \cdot \log(1 + 2 \cdot 5)
+\]
+
+\[
+C(5) = 5 + 10 \cdot \log(1 + 10)
+\]
+
+\[
+C(5) = 5 + 10 \cdot \log(11)
+\]
+
+Calculando \(\log(11) \approx 1.0414\):
+
+\[
+C(5) = 5 + 10 \cdot 1.0414
+\]
+
+\[
+C(5) = 5 + 10.414 \approx 15.414
+\]
+
+Por lo tanto, el costo de producir 5 unidades por hora es aproximadamente 15.41 nuevos soles.
+
+\section*{Problema 3: Función de Demanda}
+
+Una tienda vende un producto y la cantidad demandada del mismo sigue una función logarítmica respecto al precio. La función de demanda es:
+
+\[
+Q_d = 100 - 20 \cdot \ln(P)
+\]
+
+Donde:
+\begin{itemize}
+    \item \(Q_d\) es la cantidad demandada.
+    \item \(P\) es el precio del producto.
+    \item \(\ln\) es el logaritmo natural.
+\end{itemize}
+
+Si actualmente el precio es \(P = 5\), ¿cuál debe ser el precio \(P\) si la tienda quiere que la demanda aumente a \(Q_d = 80\)?
+
+\section*{Solución}
+
+\begin{enumerate}
+    \item Comienza con la ecuación de la demanda:
+    \[
+    Q_d = 100 - 20 \cdot \ln(P)
+    \]
+
+    \item Sustituimos \(Q_d = 80\) en la ecuación:
+    \[
+    80 = 100 - 20 \cdot \ln(P)
+    \]
+
+    \item Resolvemos para \(\ln(P)\):
+    \[
+    20 \cdot \ln(P) = 100 - 80
+    \]
+    \[
+    20 \cdot \ln(P) = 20
+    \]
+    \[
+    \ln(P) = \frac{20}{20} = 1
+    \]
+
+    \item Aplicamos la función exponencial para eliminar el logaritmo natural:
+    \[
+    P = e^1
+    \]
+
+    \item Entonces:
+    \[
+    P = e \approx 2.718
+    \]
+
+\end{enumerate}
+
+Por lo tanto, la tienda debería reducir el precio a aproximadamente \(P = 2.72\) para que la demanda aumente a \(Q_d = 80\).
+
+\section*{Problema 4: Costo Total de Producción}
+
+El costo total \(C\) de producción de una empresa sigue la relación logarítmica con la cantidad producida \(Q\), según la fórmula:
+
+\[
+C(Q) = a + b \cdot \ln(Q)
+\]
+
+donde \(a\) y \(b\) son constantes. Si producir 100 unidades cuesta \$2000 y producir 500 unidades cuesta \$3000, encuentra los valores de \(a\) y \(b\) resolviendo el sistema de ecuaciones resultante.
+
+\section*{Solución}
+
+\subsection*{Paso 1: Planteamiento de las ecuaciones}
+
+Sabemos que el costo total \(C(Q)\) está dado por la fórmula:
+
+\[
+C(Q) = a + b \cdot \ln(Q)
+\]
+
+Dado que:
+\begin{itemize}
+    \item Para \(Q_1 = 100\), \(C_1 = 2000\),
+    \item Para \(Q_2 = 500\), \(C_2 = 3000\),
+\end{itemize}
+
+Planteamos las siguientes dos ecuaciones:
+
+\[
+2000 = a + b \cdot \ln(100) \quad \text{(1)}
+\]
+\[
+3000 = a + b \cdot \ln(500) \quad \text{(2)}
+\]
+
+\subsection*{Paso 2: Usar valores aproximados para los logaritmos naturales}
+
+Usamos las aproximaciones para los logaritmos naturales:
+
+\[
+\ln(100) \approx 4.6052 \quad \text{y} \quad \ln(500) \approx 6.2146
+\]
+
+Sustituimos estos valores en las ecuaciones:
+
+\[
+2000 = a + b \cdot 4.6052 \quad \text{(3)}
+\]
+\[
+3000 = a + b \cdot 6.2146 \quad \text{(4)}
+\]
+
+\subsection*{Paso 3: Resolver el sistema de ecuaciones}
+
+Restamos la ecuación (3) de la ecuación (4) para eliminar \(a\):
+
+\[
+(3000 - 2000) = (a + b \cdot 6.2146) - (a + b \cdot 4.6052)
+\]
+\[
+1000 = b \cdot (6.2146 - 4.6052)
+\]
+\[
+1000 = b \cdot 1.6094
+\]
+\[
+b = \frac{1000}{1.6094} \approx 621.33
+\]
+
+\subsection*{Paso 4: Sustituir el valor de \(b\) en una de las ecuaciones}
+
+Sustituimos \(b = 621.33\) en la ecuación (3):
+
+\[
+2000 = a + 621.33 \cdot 4.6052
+\]
+\[
+2000 = a + 2861.36
+\]
+\[
+a = 2000 - 2861.36
+\]
+\[
+a \approx -861.36
+\]
+
+\subsection*{Resultado Final}
+
+Los valores de \(a\) y \(b\) son aproximadamente:
+
+\[
+a \approx -861.36, \quad b \approx 621.33
+\]
+\section*{Problema 5: Distribución de la Riqueza según Pareto}
+
+Vilfredo Pareto (1848-1923) observó que la mayor parte de la riqueza de un país es propiedad de unos cuantos miembros de la población. El principio de Pareto está dado por la siguiente fórmula:
+
+\[
+\log P = \log c - k \cdot \log W
+\]
+
+donde:
+\begin{itemize}
+    \item \(W\) es el nivel de riqueza (cantidad de dinero que tiene una persona).
+    \item \(P\) es el número de personas de la población que tienen esa cantidad de dinero.
+    \item \(c\) y \(k\) son constantes.
+\end{itemize}
+
+\begin{enumerate}
+    \item[a)] Despeje \(P\) de la ecuación.
+    \item[b)] Suponga que \(k = 2.1\) y \(c = 8000\), y \(W\) se mide en millones de dólares. Use el inciso a) para encontrar el número de personas que tienen 2 millones de dólares o más. ¿Cuántas personas tienen 10 millones de dólares o más?
+\end{enumerate}
+
+\section*{Solución}
+
+\subsection*{a) Despeje de \(P\)}
+
+Partimos de la ecuación dada:
+
+\[
+\log P = \log c - k \cdot \log W
+\]
+
+Aplicamos la función exponencial (base 10) a ambos lados:
+
+\[
+10^{\log P} = 10^{\log c - k \cdot \log W}
+\]
+
+Esto nos da:
+
+\[
+P = 10^{\log c} \cdot 10^{-k \cdot \log W}
+\]
+
+Simplificamos la ecuación:
+
+\[
+P = c \cdot W^{-k}
+\]
+
+Esta es la fórmula despejada para \(P\).
+
+\subsection*{b) Cálculo del número de personas}
+
+Usamos los valores dados: \(k = 2.1\), \(c = 8000\), y calculamos el número de personas que tienen \(W = 2\) millones de dólares o más, y \(W = 10\) millones de dólares o más.
+
+\subsubsection*{Para \(W = 2\) millones de dólares:}
+
+\[
+P = 8000 \cdot (2^{-2.1})
+\]
+\[
+P \approx 8000 \cdot 0.2369 \approx 1890
+\]
+
+Aproximadamente 1890 personas tienen 2 millones de dólares o más.
+
+\subsubsection*{Para \(W = 10\) millones de dólares:}
+
+\[
+P = 8000 \cdot (10^{-2.1})
+\]
+\[
+P \approx 8000 \cdot 0.00793 \approx 63
+\]
+
+Aproximadamente 63 personas tienen 10 millones de dólares o más.
+
+\section*{Interpretación de los Resultados}
+
+Los resultados muestran cómo la riqueza se concentra en un número cada vez menor de personas a medida que aumenta el nivel de riqueza, lo cual es consistente con la observación de Pareto sobre la distribución desigual de la riqueza.
+
+\end{document}
+

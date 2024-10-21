@@ -1,0 +1,296 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{csquotes}
+\usepackage[style=apa,backend=biber]{biblatex}
+\addbibresource{referencias.bib}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{amssymb}
+\usepackage[left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm]{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{pgf-pie}
+\usepackage{booktabs}
+% Configuración de APA 7ma edición
+
+\setlength{\parindent}{0.5in}
+\titleformat*{\section}{\normalfont\bfseries}
+\titleformat*{\subsection}{\normalfont\bfseries}
+\titleformat*{\subsubsection}{\normalfont\bfseries}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage}
+\pgfplotsset{compat=1.18}
+
+
+\begin{document}
+\onehalfspacing
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1in}
+        \Huge\textbf{Modelado de la oferta y demanda en mercados competitivos de café en Huánuco usando funciones lineales y cuadráticas}
+        \vspace{0.5in}
+        
+        \Large\textbf{Antony Palomino R., Delsy Rojas B., Luis Caldas B., Ronaldinho Chuquiyauri T., Tony Villanueva H.}
+        \textbf{Asesor: Mag. Marco Suarez P.}
+        \vspace{0.5in}
+        
+        \Large Universidad Nacional Hermilio Valdizán
+        
+        \Large Facultad de Economía
+        \vfill
+        \large Huánuco - Perú
+        
+        \large\today
+    \end{center}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+\section{Introducción}
+
+El café es un producto agrícola de vital importancia económica para muchas regiones del mundo, y la región de Huánuco en Perú no es una excepción. A nivel regional, el cultivo y comercialización del café desempeñan un papel fundamental en la generación de empleo y la dinamización de la economía local, particularmente en los distritos de Huánuco, Amarilis y Pillco Marca. El impacto del café no se limita solo al ámbito agrícola; su cadena de valor incluye la transformación, comercialización y exportación, lo que contribuye significativamente al Producto Interno Bruto (PIB) regional y al bienestar de los pequeños y medianos productores \parencite{jha2014, gonzalez2019}.
+
+El mercado del café ha experimentado cambios significativos en las últimas décadas debido a la globalización de los mercados agrícolas y al impacto de las fluctuaciones en los precios internacionales. Desde la liberalización del comercio en las décadas de 1980 y 1990, el mercado del café se ha visto sometido a crecientes presiones debido a la volatilidad de los precios, cambios en las políticas agrícolas y la competencia en mercados internacionales \parencite{daviron2005}. Esta evolución ha generado desafíos tanto para productores como para consumidores, lo que hace indispensable un análisis matemático que permita entender las dinámicas de oferta y demanda en mercados locales.
+
+El principal desafío que enfrenta el mercado del café en Huánuco es la fluctuación en la oferta y demanda, afectada por factores tanto externos como internos, tales como la variabilidad climática, la competencia externa y las políticas gubernamentales inconsistentes. Además, la poca infraestructura de almacenamiento y comercialización limita la capacidad de los productores para adaptarse a las demandas del mercado. Por tanto, surge la necesidad de modelar estos aspectos matemáticamente para comprender cómo interactúan los precios y cantidades ofertadas y demandadas, de modo que los productores puedan tomar decisiones más informadas y predecir el comportamiento del mercado.
+
+La literatura económica sugiere que el uso de modelos matemáticos es crucial para captar las complejidades de los mercados \parencite{samuelson2010}. En este estudio, se utilizarán funciones lineales, cuadráticas, exponenciales y logarítmicas para abordar estos desafíos específicos. Además, se aplicarán conceptos de límites y derivadas para analizar el comportamiento marginal de la oferta y la demanda \parencite{varian2014}.
+
+Las funciones lineales, representadas por la ecuación $y = mx + b$, donde $m$ es la pendiente y $b$ es la intersección con el eje $y$, se utilizarán para modelar relaciones simples entre precio y cantidad \parencite{nicholson2017}. Por otro lado, las funciones cuadráticas, de la forma $y = ax^2 + bx + c$, permitirán capturar relaciones no lineales más complejas, como la disminución de retornos en la producción \parencite{mas2018}.
+
+Para representar el crecimiento o decrecimiento exponencial en la oferta o demanda, se emplearán funciones exponenciales de la forma $y = ae^{bx}$, donde $e$ es la base del logaritmo natural \parencite{chiang2005}. Las funciones logarítmicas, expresadas como $y = a\ln(x) + b$, serán útiles para modelar situaciones donde el efecto marginal disminuye a medida que aumenta la variable independiente \parencite{sydsaeter2014}.
+
+El concepto de límites, definido como $\lim_{x \to a} f(x) = L$, se aplicará para analizar el comportamiento de las funciones de oferta y demanda en situaciones extremas \parencite{stewart2012}. Las derivadas, expresadas como $f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$, se utilizarán para estudiar las tasas de cambio en la oferta y la demanda, así como para determinar los puntos de equilibrio y optimización \parencite{anton2013}.
+
+Este estudio pretende llenar un vacío en la comprensión del comportamiento de los pequeños y medianos productores de café en Huánuco, y cómo pueden optimizar sus estrategias de producción frente a un entorno volátil y regulado. Los estudios previos, como los de \parencite{fischer2020}, no han abordado de manera integral las particularidades de estos mercados locales bajo el enfoque matemático que este trabajo propone. Al utilizar modelos de oferta y demanda basados en funciones avanzadas, se espera proporcionar herramientas útiles para que los productores puedan mejorar sus estrategias de venta, mientras que los responsables de políticas gubernamentales podrían ajustar sus intervenciones para promover una mayor estabilidad en el mercado.
+
+El objetivo general de este estudio es analizar el comportamiento del mercado del café en Huánuco mediante el uso de funciones lineales, cuadráticas, exponenciales y logarítmicas, así como conceptos de límites y derivadas, con el fin de determinar el precio y la cantidad de equilibrio en el mercado competitivo. Los objetivos específicos son:
+
+\begin{enumerate}
+    \item Recolectar y analizar datos sobre la oferta y demanda de café en los distritos de Huánuco.
+    \item Modelar matemáticamente las interacciones de oferta y demanda utilizando funciones lineales, cuadráticas, exponenciales y logarítmicas.
+    \item Aplicar conceptos de límites y derivadas para analizar el comportamiento marginal y los puntos de equilibrio en el mercado del café.
+    \item Evaluar el impacto de las políticas gubernamentales sobre los precios y la cantidad de café en el mercado local utilizando los modelos desarrollados.
+    \item Proponer recomendaciones a los pequeños y medianos productores sobre estrategias de adaptación en función de los resultados obtenidos.
+\end{enumerate}
+
+Entre las limitaciones de este estudio se encuentran la variabilidad de los datos disponibles y las fluctuaciones externas al control de los productores locales, como el cambio climático o la volatilidad de los precios internacionales. El alcance de este estudio está limitado geográficamente al distrito de Huánuco, y temporalmente al año 2024, lo que implica que los resultados reflejarán las condiciones actuales del mercado.
+
+Este trabajo se organiza en cinco secciones principales. La introducción ofrece un panorama general del contexto y la relevancia del estudio. El marco teórico explica las bases conceptuales y matemáticas que sustentan el análisis de oferta y demanda. La metodología detalla el proceso de recolección y análisis de datos. El desarrollo del estudio aplica los modelos matemáticos a los datos recolectados, y finalmente, se presenta un análisis del impacto de las políticas gubernamentales sobre el mercado del café, seguido de las conclusiones y recomendaciones prácticas para los actores del mercado.
+
+\section{Marco Teórico}
+
+El marco teórico de este estudio se fundamenta en las teorías económicas clásicas de oferta y demanda, así como en las aplicaciones más modernas de modelos matemáticos para mercados competitivos. En esta sección, se explicarán los conceptos económicos fundamentales, las funciones matemáticas aplicadas a la oferta y demanda, y cómo estas teorías han sido utilizadas previamente para analizar mercados agrícolas, con énfasis en el café. Asimismo, se explorará el rol de las políticas gubernamentales en la modulación del equilibrio de mercado.
+
+\subsection{Teoría de la Oferta y la Demanda}
+
+La oferta y la demanda son los pilares fundamentales de cualquier análisis económico de mercados competitivos. La teoría de la demanda, formulada originalmente por \cite{marshall1890}, sostiene que existe una relación inversa entre el precio de un bien y la cantidad demandada. Por otro lado, la oferta se define como la relación directa entre el precio de un bien y la cantidad que los productores están dispuestos a ofrecer en el mercado \parencite{varian2014}. 
+
+Matemáticamente, la función de demanda se puede expresar como:
+
+\[Q_d = f(P, Y, P_r, T, E)\]
+
+Donde $Q_d$ es la cantidad demandada, $P$ es el precio del bien, $Y$ es el ingreso del consumidor, $P_r$ son los precios de bienes relacionados, $T$ son los gustos y preferencias, y $E$ son las expectativas futuras \parencite{nicholson2017}.
+
+De manera similar, la función de oferta se puede representar como:
+
+\[Q_s = g(P, C, T, E, N)\]
+
+Donde $Q_s$ es la cantidad ofertada, $P$ es el precio del bien, $C$ son los costos de producción, $T$ es la tecnología disponible, $E$ son las expectativas futuras, y $N$ es el número de productores en el mercado \parencite{mas2018}.
+
+\subsection{Modelado Matemático de la Oferta y la Demanda}
+
+\subsubsection{Funciones Lineales}
+
+Las funciones lineales son la forma más simple de modelar la oferta y la demanda. Una función lineal de demanda puede expresarse como:
+
+\[Q_d = a - bP\]
+
+Donde $a$ es la cantidad demandada cuando el precio es cero (intercepto) y $b$ es la pendiente de la función, que representa la sensibilidad de la demanda al precio \parencite{chiang2005}.
+
+De manera similar, una función lineal de oferta puede ser:
+
+\[Q_s = c + dP\]
+
+Donde $c$ es la cantidad ofrecida cuando el precio es cero y $d$ es la pendiente, que indica la sensibilidad de la oferta al precio \parencite{sydsaeter2014}.
+
+\subsubsection{Funciones Cuadráticas}
+
+Las funciones cuadráticas permiten modelar relaciones no lineales más complejas. Una función cuadrática de demanda puede tener la forma:
+
+\[Q_d = a - bP + cP^2\]
+
+Donde $c$ introduce la curvatura en la función. Esta forma es útil para representar bienes con elasticidad variable \parencite{varian2014}.
+
+\subsubsection{Funciones Exponenciales y Logarítmicas}
+
+Las funciones exponenciales y logarítmicas son útiles para modelar situaciones donde el efecto marginal cambia con el nivel de la variable. Una función de demanda exponencial podría ser:
+
+\[Q_d = ae^{-bP}\]
+
+Mientras que una función logarítmica de oferta podría expresarse como:
+
+\[Q_s = a + b\ln(P)\]
+
+Estas formas funcionales son particularmente útiles para modelar bienes con elasticidades constantes \parencite{mas2018}.
+
+\subsection{Análisis de Equilibrio}
+
+El equilibrio de mercado ocurre cuando la cantidad demandada es igual a la cantidad ofertada. Matemáticamente, esto se puede expresar como:
+
+\[Q_d = Q_s\]
+
+Para encontrar el precio y la cantidad de equilibrio, se resuelve el sistema de ecuaciones formado por las funciones de oferta y demanda \parencite{varian2014}.
+
+\subsection{Aplicación de Límites y Derivadas}
+
+Los conceptos de límites y derivadas son fundamentales para el análisis marginal en economía. El límite de una función se define como:
+
+\[\lim_{x \to a} f(x) = L\]
+
+Este concepto es útil para analizar el comportamiento de las funciones de oferta y demanda en situaciones extremas \parencite{stewart2012}.
+
+La derivada de una función se define como:
+
+\[f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}\]
+
+En el contexto de la oferta y la demanda, las derivadas se utilizan para calcular la elasticidad precio, que mide la sensibilidad de la cantidad demandada u ofertada ante cambios en el precio \parencite{anton2013}:
+
+\[E_p = \frac{\partial Q}{\partial P} \cdot \frac{P}{Q}\]
+
+\subsection{Políticas Gubernamentales y su Impacto en el Mercado}
+
+Las políticas gubernamentales pueden alterar el equilibrio de mercado. Por ejemplo, un impuesto sobre la producción de café puede modelarse como un desplazamiento de la curva de oferta:
+
+\[Q_s = c + d(P - t)\]
+
+Donde $t$ es el impuesto por unidad. De manera similar, un subsidio puede representarse como:
+
+\[Q_s = c + d(P + s)\]
+
+Donde $s$ es el subsidio por unidad \parencite{nicholson2017}.
+
+\subsection{Aplicación al Mercado del Café}
+
+En el contexto específico del mercado del café en Huánuco, estos modelos matemáticos se utilizarán para:
+
+\begin{itemize}
+    \item Estimar las funciones de oferta y demanda basadas en datos históricos.
+    \item Calcular el equilibrio de mercado y analizar cómo cambia en respuesta a diferentes políticas.
+    \item Evaluar la elasticidad precio de la oferta y la demanda de café.
+    \item Predecir el impacto de cambios en factores externos como el clima o los precios internacionales.
+\end{itemize}
+
+\cite{bacon2015} aplicaron modelos similares para analizar la volatilidad de los precios del café en mercados internacionales, mientras que \cite{rueda2018} utilizaron funciones no lineales para modelar la respuesta de los pequeños productores a cambios en los precios del café en Colombia.
+
+Este marco teórico proporciona las herramientas necesarias para un análisis riguroso del mercado del café en Huánuco, permitiendo no solo describir el estado actual del mercado, sino también predecir su comportamiento futuro y evaluar el impacto potencial de diferentes políticas económicas.
+
+\section{Metodología}
+
+La metodología de este estudio sigue un enfoque cuantitativo y busca describir y explicar el comportamiento del mercado del café en los distritos de Huánuco, Amarilis y Pillco Marca. Este enfoque permite utilizar modelos matemáticos avanzados para analizar la relación entre las variables de oferta y demanda y su interacción con las políticas gubernamentales. De acuerdo con \cite{creswell2014}, los estudios cuantitativos son ideales para la recolección y análisis de datos que permitan establecer relaciones causales y patrones en grandes poblaciones, en este caso, pequeños y medianos productores de café.
+
+\subsection{Diseño de la Investigación}
+
+El estudio adopta un diseño descriptivo-explicativo, el cual, según \cite{hernandez2014}, permite no solo describir los fenómenos tal como son observados, sino también analizar y explicar las relaciones entre las variables. En este caso, se busca describir cómo se comporta la oferta y la demanda en el mercado del café, y a su vez explicar cómo las políticas gubernamentales y factores externos, como la volatilidad del mercado internacional, afectan dichas variables.
+
+\subsection{Recolección de Datos}
+
+La recolección de datos sigue una estrategia mixta que combina fuentes primarias y secundarias, lo cual según \cite{yin2017} permite obtener una visión más integral del fenómeno estudiado.
+
+\subsubsection{Fuentes Primarias}
+\begin{itemize}
+    \item Encuestas estructuradas a productores de café en la región, con preguntas sobre su producción, costos y precios.
+    \item Entrevistas a profundidad con expertos del sector cafetalero local.
+    \item Datos de consumo local obtenidos mediante encuestas a comerciantes y consumidores.
+\end{itemize}
+
+\subsubsection{Fuentes Secundarias}
+\begin{itemize}
+    \item Datos históricos y estadísticos del Ministerio de Agricultura y Riego (MINAGRI).
+    \item Informes de organizaciones internacionales como la Organización Internacional del Café (ICO).
+    \item Publicaciones académicas y estudios previos sobre mercados agrícolas.
+\end{itemize}
+
+\subsection{Análisis de Datos}
+
+El análisis de los datos recolectados será guiado por métodos cuantitativos avanzados, aplicando técnicas estadísticas y matemáticas para ajustar los modelos de oferta y demanda.
+
+\subsubsection{Preparación de Datos}
+\begin{itemize}
+    \item Limpieza y organización de datos utilizando software estadístico como R o Python.
+    \item Detección y tratamiento de valores atípicos mediante técnicas como el método de Tukey \parencite{tukey1977}.
+    \item Normalización y estandarización de variables para asegurar la comparabilidad de los datos.
+\end{itemize}
+
+\subsubsection{Modelado Matemático}
+\begin{itemize}
+    \item Ajuste de funciones lineales, cuadráticas, exponenciales y logarítmicas para modelar la oferta y demanda:
+    \begin{equation}
+        Q_d = f(P, X) \quad \text{y} \quad Q_s = g(P, Y)
+    \end{equation}
+    donde $X$ e $Y$ son vectores de variables explicativas adicionales.
+    
+    \item Estimación de parámetros utilizando métodos de regresión, incluyendo Mínimos Cuadrados Ordinarios (OLS) y Máxima Verosimilitud (ML) \parencite{wooldridge2010}.
+    
+    \item Aplicación de técnicas de regresión no lineal para funciones más complejas \parencite{greene2018}.
+\end{itemize}
+
+\subsubsection{Análisis de Equilibrio}
+\begin{itemize}
+    \item Cálculo del equilibrio de mercado resolviendo el sistema de ecuaciones:
+    \begin{equation}
+        Q_d(P^*, X) = Q_s(P^*, Y)
+    \end{equation}
+    donde $P^*$ es el precio de equilibrio.
+    
+    \item Análisis de estabilidad del equilibrio utilizando conceptos de teoría de juegos y dinámica de sistemas \parencite{mas2018}.
+\end{itemize}
+
+\subsubsection{Análisis de Sensibilidad y Elasticidades}
+\begin{itemize}
+    \item Cálculo de elasticidades precio de la oferta y demanda:
+    \begin{equation}
+        E_p = \frac{\partial Q}{\partial P} \cdot \frac{P}{Q}
+    \end{equation}
+    
+    \item Análisis de sensibilidad para evaluar cómo cambios en los parámetros del modelo afectan los resultados, utilizando técnicas como el análisis de Monte Carlo \parencite{metropolis1949}.
+\end{itemize}
+
+\subsubsection{Evaluación de Políticas}
+\begin{itemize}
+    \item Simulación del impacto de diferentes políticas gubernamentales (impuestos, subsidios, cuotas) en el equilibrio de mercado.
+    \item Análisis costo-beneficio de las políticas propuestas utilizando conceptos de teoría del bienestar \parencite{just2004}.
+\end{itemize}
+
+\subsection{Validación del Modelo}
+
+Para asegurar la robustez y validez de los resultados, se implementarán las siguientes estrategias:
+
+\begin{itemize}
+    \item Validación cruzada para evaluar la capacidad predictiva del modelo \parencite{stone1974}.
+    \item Pruebas de especificación para detectar problemas como heterocedasticidad o autocorrelación \parencite{white1980}.
+    \item Comparación de los resultados con estudios similares en otros mercados de café \parencite{rueda2018}.
+\end{itemize}
+
+\subsection{Limitaciones del Estudio}
+
+Es importante reconocer las limitaciones inherentes a este enfoque metodológico:
+
+\begin{itemize}
+    \item La calidad y disponibilidad de datos históricos pueden afectar la precisión de las estimaciones.
+    \item Los modelos matemáticos, aunque sofisticados, son simplificaciones de la realidad y pueden no capturar todas las complejidades del mercado.
+    \item El enfoque geográfico limitado a Huánuco puede restringir la generalización de los resultados a otras regiones.
+\end{itemize}
+
+Esta metodología rigurosa y cuantitativa permitirá un análisis profundo del mercado del café en Huánuco, proporcionando insights valiosos sobre las dinámicas de oferta y demanda y el impacto potencial de diferentes políticas económicas. Los resultados obtenidos servirán como base para formular recomendaciones prácticas y fundamentadas para los actores del mercado y los responsables de políticas públicas.
+
+\newpage
+\printbibliography
+ \end{document}
