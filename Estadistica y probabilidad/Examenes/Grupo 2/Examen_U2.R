@@ -23,7 +23,7 @@ cat('La media de las operaciones es: ', media_operacion, 'mil')
 
 # C. ¿La moda se encuentra por debajo o por arriba de los 25 000 galones?
 # ¿C´omo lo sabe?
- 
+
 intervalo_modal = which.max(ventas$f_absoluta)
 Li = ventas$limite_inferior[intervalo_modal]
 A = ventas$limete_superior[intervalo_modal] - ventas$limite_inferior[intervalo_modal]
@@ -47,9 +47,9 @@ Fi_1 = ventas$f_a_acumulada[intervalo_medinal-1]
 mediana = Li + A/fi * (n/2 - Fi_1)
 
 datos_empresas <- c(73, 95, 61, 46, 70, 55, 87, 65, 75, 48, 69, 75, 75, 39, 63, 82, 
-           58, 43, 38, 64, 69, 79, 47, 63, 63, 81, 59, 77, 84, 34, 75, 93, 
-           67, 89, 66, 52, 59, 36, 62, 43, 75, 52, 59, 87, 74, 30, 95, 38, 
-           50, 72, 44, 53, 68, 72, 82, 63)
+                    58, 43, 38, 64, 69, 79, 47, 63, 63, 81, 59, 77, 84, 34, 75, 93, 
+                    67, 89, 66, 52, 59, 36, 62, 43, 75, 52, 59, 87, 74, 30, 95, 38, 
+                    50, 72, 44, 53, 68, 72, 82, 63)
 
 # a) Elaborar la tabla de frecuencias usando la regla de Sturges. (2 puntos)
 
@@ -97,9 +97,9 @@ plot(rule_1, frecuencia_empresas$f_a_acumulada,
      col = "blue", lwd = 2)
 
 lines(marca_de_clase, 
-      tabla_frecuencia$f_a_acumulada, 
+      frecuencia_empresas$f_a_acumulada, 
       type = "b", col = "red", pch = 16, lwd = 2
-      )
+)
 text(marca_de_clase, 
      tabla_frecuencia$f_a_acumulada, 
      labels = tabla_frecuencia$f_a_acumulada, 
