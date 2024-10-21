@@ -101,8 +101,8 @@ lines(marca_de_clase,
       type = "b", col = "red", pch = 16, lwd = 2
 )
 text(marca_de_clase, 
-     tabla_frecuencia$f_a_acumulada, 
-     labels = tabla_frecuencia$f_a_acumulada, 
+     frecuencia_empresas$f_a_acumulada, 
+     labels = frecuencia_empresas$f_a_acumulada, 
      pos = 3, col = "black")
 
 
