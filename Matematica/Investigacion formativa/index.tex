@@ -7,7 +7,6 @@
 \usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
-
 \usepackage{amssymb}
 \usepackage[left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm]{geometry}
 \usepackage{setspace}
@@ -26,8 +25,10 @@
 \pagestyle{fancy}
 \fancyhf{}
 \rhead{\thepage}
-\pgfplotsset{compat=1.18}
+\setlength{\headheight}{14.5pt} % Ajuste de la altura de la cabecera
+\addtolength{\topmargin}{-2.5pt} % Ajuste opcional del margen superior
 
+\pgfplotsset{compat=1.18}
 
 \begin{document}
 \onehalfspacing
