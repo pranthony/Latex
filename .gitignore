@@ -114,7 +114,6 @@ texworks.ini
 *.aspx
 *.jsp
 *.jspx
-*.py
 *.java
 *.class
 *.jar
