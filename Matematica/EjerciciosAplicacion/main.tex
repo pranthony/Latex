@@ -1,0 +1,266 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage[a4paper, margin=2.54cm]{geometry}
+\usepackage{setspace}
+\usepackage[utf8]{inputenc}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{bibliografia.bib}
+
+\begin{document}
+\section*{3. Derivar las siguientes funciones exponenciales}
+
+\subsection*{1. \( f(x) = 10^{\sqrt{x}} \)}
+Para derivar \( f(x) = 10^{\sqrt{x}} \), usamos la fórmula general para \( a^{g(x)} \):
+\[
+    \frac{d}{dx} \left( a^{g(x)} \right) = a^{g(x)} \ln(a) g'(x).
+\]
+Identificamos \( g(x) = \sqrt{x} \) y derivamos:
+\[
+    g'(x) = \frac{1}{2\sqrt{x}}.
+\]
+Entonces:
+\[
+    f'(x) = 10^{\sqrt{x}} \ln(10) \cdot \frac{1}{2\sqrt{x}}.
+\]
+Simplificando:
+\[
+    f'(x) = \frac{\ln(10) \cdot 10^{\sqrt{x}}}{2\sqrt{x}}.
+\]
+\subsection*{2. \( f(x) = e^{3 - x^2} \)}
+Usamos la regla de la cadena:
+\[
+    f'(x) = e^{3 - x^2} \cdot (-2x) = -2x \cdot e^{3 - x^2}
+\]
+
+\subsection*{3. \( f(x) = \frac{e^x + e^{-x}}{2} \)}
+Derivamos cada término:
+\[
+    f'(x) = \frac{1}{2} \left( e^x - e^{-x} \right)
+\]
+
+\subsection*{4. \( f(x) = 3^{2x^2} \cdot \sqrt{x} \)}
+Primero, derivamos \( 3^{2x^2} \) usando \( a^{g(x)} \rightarrow a^{g(x)} \ln(a) g'(x) \), y aplicamos la regla del producto:
+\[
+    f'(x) = \left(3^{2x^2} \cdot \ln(3) \cdot 4x \cdot \sqrt{x}\right) + \left(3^{2x^2} \cdot \frac{1}{2\sqrt{x}}\right)
+\]
+Simplificando:
+\[
+    f'(x) = 3^{2x^2} \left(4x \ln(3) \sqrt{x} + \frac{1}{2\sqrt{x}} \right)
+\]
+
+\subsection*{5. \( f(x) = \frac{e^{2x}}{x^2} \)}
+Usamos la regla del cociente:
+\[
+    f'(x) = \frac{\left( e^{2x} \cdot 2 \right) x^2 - e^{2x} \cdot 2x}{x^4}
+\]
+Simplificamos:
+\[
+    f'(x) = \frac{2x^2 e^{2x} - 2x e^{2x}}{x^4} = \frac{2xe^{2x}(x - 1)}{x^4}
+\]
+Finalmente:
+\[
+    f'(x) = \frac{2e^{2x}(x - 1)}{x^3}
+\]
+
+\section*{4. Calcular la derivada de las funciones logaritmicas}
+
+1. \( f(x) = \ln(2x^4 - x^3 + 3x^2 - 3x) \)
+\[
+    f'(x) = \frac{1}{2x^4 - x^3 + 3x^2 - 3x} \cdot (8x^3 - 3x^2 + 6x - 3)
+\]
+
+2. \( f(x) = \ln\left(\frac{e^x + 1}{e^x - 1}\right) \)
+\[
+    f'(x) = \frac{-2e^x}{(e^x + 1)(e^x - 1)}
+\]
+
+3. \( f(x) = \log \sqrt{\frac{1+x}{1-x}} \)
+\[
+    f'(x) = \frac{1}{\ln(10) (1+x)(1-x)}
+\]
+
+4. \( f(x) = \ln\sqrt{x(1-x)} \)
+\[
+    f'(x) = \frac{1-2x}{2x(1-x)}
+\]
+
+5. \( f(x) = \ln\sqrt[3]{\frac{3x}{x+2}} \)
+\[
+    f'(x) = \frac{2}{3x(x+2)}
+\]
+
+\section*{5. Calcula mediante la formula de la derivada de una raiz}
+
+1. \( f(x) = \sqrt{x^2 - 2x + 3} \)  
+\[
+f'(x) = \frac{x - 1}{\sqrt{x^2 - 2x + 3}}
+\]
+
+2. \( f(x) = \sqrt[4]{x^5 - x^3 - 2} \)  
+\[
+f'(x) = \frac{5x^4 - 3x^2}{4 \sqrt[4]{(x^5 - x^3 - 2)^3}}
+\]
+
+3. \( f(x) = \sqrt[3]{\frac{x^2 + 1}{x^2 - 1}} \)  
+\[
+f'(x) = \frac{-4x}{3 \sqrt[3]{\left(\frac{x^2 + 1}{x^2 - 1}\right)^2} (x^2 - 1)^2}
+\]
+
+\section*{6. Calcula mediante la formula de la derivada de seno}
+
+1. \( f(x) = \sin(2x) \)  
+\[
+f'(x) = 2\cos(2x)
+\]
+
+2. \( f(x) = \sin(x^2) \)  
+\[
+f'(x) = 2x\cos(x^2)
+\]
+
+3. \( f(x) = \sin(\pi x^2) \)  
+\[
+f'(x) = 2\pi x \cos(\pi x^2)
+\]
+\section*{7. Calcula mediante la formula de derivada de coseno}
+
+\subsection*{1. $f(x) = \cos(3x)$}
+La derivada de $f(x)$ se obtiene aplicando la regla de la cadena:
+\[
+f'(x) = \frac{d}{dx} \cos(3x) = -\sin(3x) \cdot \frac{d}{dx}(3x)
+\]
+\[
+f'(x) = -\sin(3x) \cdot 3
+\]
+\[
+f'(x) = -3\sin(3x)
+\]
+
+\subsection*{2. $f(x) = \cos(3x - 2)$}
+Aplicando nuevamente la regla de la cadena:
+\[
+f'(x) = \frac{d}{dx} \cos(3x - 2) = -\sin(3x - 2) \cdot \frac{d}{dx}(3x - 2)
+\]
+\[
+f'(x) = -\sin(3x - 2) \cdot 3
+\]
+\[
+f'(x) = -3\sin(3x - 2)
+\]
+
+\subsection*{3. $f(x) = \cos\left(\pi \left(x^2 - 1\right)\right)$}
+Primero, aplicamos la regla de la cadena:
+\[
+f'(x) = \frac{d}{dx} \cos\left(\pi \left(x^2 - 1\right)\right) = -\sin\left(\pi \left(x^2 - 1\right)\right) \cdot \frac{d}{dx}\left(\pi \left(x^2 - 1\right)\right)
+\]
+Luego, derivamos el argumento $\pi (x^2 - 1)$:
+\[
+\frac{d}{dx}\left(\pi \left(x^2 - 1\right)\right) = \pi \cdot \frac{d}{dx}\left(x^2 - 1\right) = \pi \cdot 2x
+\]
+Sustituyendo:
+\[
+f'(x) = -\sin\left(\pi \left(x^2 - 1\right)\right) \cdot \pi \cdot 2x
+\]
+\[
+f'(x) = -2\pi x \sin\left(\pi \left(x^2 - 1\right)\right)
+\]
+
+
+\section*{8. Calculo mediante la formula de tangente}
+
+\subsection*{1. $f(x) = \tan(nx)$}
+La derivada de $\tan(u)$ es $\frac{d}{dx}\tan(u) = \sec^2(u) \cdot \frac{du}{dx}$. Aplicamos esta fórmula:
+\[
+f'(x) = \frac{d}{dx} \tan(nx) = \sec^2(nx) \cdot \frac{d}{dx}(nx)
+\]
+\[
+f'(x) = \sec^2(nx) \cdot n
+\]
+\[
+f'(x) = n \sec^2(nx)
+\]
+
+\subsection*{2. $f(x) = \tan(\pi x + 1)$}
+Aplicamos nuevamente la regla de la derivada de $\tan(u)$:
+\[
+f'(x) = \frac{d}{dx} \tan(\pi x + 1) = \sec^2(\pi x + 1) \cdot \frac{d}{dx}(\pi x + 1)
+\]
+\[
+f'(x) = \sec^2(\pi x + 1) \cdot \pi
+\]
+\[
+f'(x) = \pi \sec^2(\pi x + 1)
+\]
+
+\subsection*{3. $f(x) = \tan\left(\pi \left(x^2 - 1\right)\right)$}
+Primero, aplicamos la fórmula de la derivada de $\tan(u)$:
+\[
+f'(x) = \frac{d}{dx} \tan\left(\pi \left(x^2 - 1\right)\right) = \sec^2\left(\pi \left(x^2 - 1\right)\right) \cdot \frac{d}{dx}\left(\pi \left(x^2 - 1\right)\right)
+\]
+Ahora derivamos el argumento $\pi (x^2 - 1)$:
+\[
+\frac{d}{dx}\left(\pi \left(x^2 - 1\right)\right) = \pi \cdot \frac{d}{dx}(x^2 - 1) = \pi \cdot 2x
+\]
+Sustituyendo:
+\[
+f'(x) = \sec^2\left(\pi \left(x^2 - 1\right)\right) \cdot \pi \cdot 2x
+\]
+\[
+f'(x) = 2\pi x \sec^2\left(\pi \left(x^2 - 1\right)\right)
+\]
+\section*{9. Calcula mediante la regla de la cadena las siguientes funciones exponenciales}
+
+\subsection*{1. $f(x) = e^{\sin(3x)}$}
+La derivada de $e^u$ es $\frac{d}{dx} e^u = e^u \cdot \frac{du}{dx}$. Aplicamos esta regla:
+\[
+f'(x) = e^{\sin(3x)} \cdot \frac{d}{dx}(\sin(3x))
+\]
+Derivamos $\sin(3x)$ utilizando la regla de la cadena:
+\[
+\frac{d}{dx}(\sin(3x)) = \cos(3x) \cdot \frac{d}{dx}(3x) = \cos(3x) \cdot 3
+\]
+Sustituyendo en la expresión original:
+\[
+f'(x) = e^{\sin(3x)} \cdot 3\cos(3x)
+\]
+\[
+f'(x) = 3e^{\sin(3x)}\cos(3x)
+\]
+
+\subsection*{2. $f(x) = e^{\cos(2\pi x - n)}$}
+Aplicamos la misma regla para derivar $e^u$:
+\[
+f'(x) = e^{\cos(2\pi x - n)} \cdot \frac{d}{dx}(\cos(2\pi x - n))
+\]
+Derivamos $\cos(2\pi x - n)$:
+\[
+\frac{d}{dx}(\cos(2\pi x - n)) = -\sin(2\pi x - n) \cdot \frac{d}{dx}(2\pi x - n)
+\]
+Derivamos $2\pi x - n$:
+\[
+\frac{d}{dx}(2\pi x - n) = 2\pi
+\]
+Sustituyendo:
+\[
+\frac{d}{dx}(\cos(2\pi x - n)) = -\sin(2\pi x - n) \cdot 2\pi
+\]
+Sustituyendo en la expresión original:
+\[
+f'(x) = e^{\cos(2\pi x - n)} \cdot \left(-\sin(2\pi x - n) \cdot 2\pi\right)
+\]
+\[
+f'(x) = -2\pi e^{\cos(2\pi x - n)} \sin(2\pi x - n)
+\]
+\section*{10. Calcula mediante la regla de la cadena las siguientes funciones logaritmicas naturales}
+
+1. Sea \( f(x) = \ln(\sin(\pi x)) \), su derivada es:
+\[
+f'(x) = \pi \cot(\pi x)
+\]
+
+2. Sea \( f(x) = \ln(\cos(2\pi x - n)) \), su derivada es:
+\[
+f'(x) = -2\pi \tan(2\pi x - n)
+\]
+\end{document}
+
