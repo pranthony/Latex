@@ -49,22 +49,22 @@ Id,edad,genero,año,dispositivos_disponibles,tipo_conexion,calidad_internet,uso_
 53J,21,Femenino,3°,3,Cable,4,5,5,5,5,5,70,5,4,5,5,4
 54J,22,Masculino,3°,3,Fibra óptica,5,4,4,5,5,5,170,5,4,4,5,5
 55J,22,Masculino,3°,2,Fibra óptica,4,4,5,5,5,5,210,5,4,4,5,3
-56J,21,Femenino,2°,2,Fibra óptica,4,4,4,4,5,5,100,5,5,3,4,4
+56J,21,Femenino,2°,2,Fibra óptica,4,4,4,4,5,5,130,5,5,3,4,4
 57J,23,Femenino,4°,2,Cable,5,4,4,4,4,3,200,5,4,4,4,4
 58J,20,Masculino,2°,2,Cable,3,5,3,3,4,5,210,3,3,3,4,3
-59J,20,Masculino,2°,2,4G/5G,4,4,3,3,4,4,90,5,3,2,4,3
+59J,20,Masculino,2°,2,4G/5G,4,4,3,3,4,4,140,5,3,2,4,3
 5R,21,Femenino,5°,1,Fibra óptica,4,3,3,4,5,4,70,4,3,3,4,2
 60J,20,Femenino,2°,3,Fibra óptica,4,4,4,3,4,4,170,5,4,4,5,3
-61J,21,Femenino,2°,2,Cable,4,4,4,4,4,4,120,4,3,3,3,3
+61J,21,Femenino,2°,2,Cable,4,4,4,4,4,4,150,4,3,3,3,3
 62J,22,Masculino,3°,3,Cable,4,3,4,4,4,3,110,4,4,4,5,4
 63P,23,Masculino,1°,3,Fibra óptica,5,1,3,3,5,3,400,5,5,5,5,5
 64P,17,Masculino,1°,2,4G/5G,3,1,2,2,2,3,210,2,2,1,2,1
 6R,20,Masculino,4°,2,Fibra óptica,3,3,3,4,4,3,30,4,3,5,3,5
 7R,21,Masculino,5°,1,4G/5G,1,3,2,5,2,4,210,2,4,2,4,2
-8R,22,Femenino,5°,2,Ninguna,4,2,4,4,5,3,90,4,4,4,4,3
-9R,22,Femenino,5°,1,4G/5G,1,3,3,3,3,3,90,3,3,3,4,4
-65P,23,Masculino,1°,4,Fibra óptica,4,3,2,2,5,4,210,3,2,1,2,1
-66P,18,Femenino,1°,1,4G/5G,3,2,2,3,5,4,90,2,2,2,2,2
+8R,22,Femenino,5°,2,Ninguna,4,2,4,4,5,3,160,4,4,4,4,3
+9R,22,Femenino,5°,1,4G/5G,1,3,3,3,3,3,130,3,3,3,4,4
+65P,23,Masculino,1°,4,Fibra óptica,4,3,2,2,5,4,170,3,2,1,2,1
+66P,18,Femenino,1°,1,4G/5G,3,2,2,3,5,4,140,2,2,2,2,2
 67P,19,Masculino,2°,3,4G/5G,2,3,1,1,3,2,130,4,3,5,3,5
 68P,20,Femenino,2°,4,Fibra óptica,3,2,3,2,2,3,130,2,4,2,4,2
 69P,21,Masculino,2°,2,4G/5G,4,3,4,2,3,4,200,4,4,4,4,3
