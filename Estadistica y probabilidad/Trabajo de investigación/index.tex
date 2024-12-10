@@ -7,7 +7,8 @@
 \usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
-
+\usepackage{booktabs}
+\usepackage{float}
 \usepackage{amssymb}
 \usepackage[a4paper, margin=2.54cm]{geometry}
 \usepackage{setspace}
@@ -121,7 +122,7 @@ En síntesis, la brecha digital representa un obstáculo significativo para el d
 
 \subsection{Definición Conceptual}
 
-Para efectos de este estudio, se entiende por \textit{brecha digital} la desigualdad existente en el acceso, uso y desarrollo de habilidades relacionadas con las TIC entre los estudiantes de la Facultad de Economía de la UNHEVAL. Además, la \textit{inclusión digital} se define como el proceso de garantizar acceso y capacidad para utilizar tecnologías digitales \parencite{unesco2019}.
+Para efectos de este estudio, se entiende por \textit{brecha digital} la desigualdad existente en el acceso, uso y desarrollo de habilidades relacionadas con las TIC entre los estudiantes de la Facultad de Economía de la Unheval. Además, la \textit{inclusión digital} se define como el proceso de garantizar acceso y capacidad para utilizar tecnologías digitales \parencite{unesco2019}.
 
 
 \section{Metodología}
@@ -136,13 +137,10 @@ La técnica empleada para la recolección de datos es la encuesta, una herramien
 
 El instrumento utilizado será un cuestionario, diseñado específicamente para medir los aspectos clave relacionados con la brecha digital: acceso a dispositivos, calidad de la conectividad, frecuencia de uso de recursos digitales y nivel de habilidades en el manejo de herramientas tecnológicas. Este cuestionario será validado previamente mediante pruebas piloto para garantizar su confiabilidad y pertinencia en el contexto de la investigación.  
 
-La población de estudio está constituida por los 348 estudiantes matriculados en la Facultad de Economía de la UNHEVAL durante el ciclo académico 2024-2. De esta población, se seleccionó una muestra representativa de 72 estudiantes, utilizando un método de muestreo probabilístico. Este tamaño muestral garantiza la representatividad de los resultados y permite realizar inferencias sobre la totalidad de la población estudiada.  
+La población de estudio está constituida por los 348 estudiantes matriculados en la Facultad de Economía de la Unheval durante el ciclo académico 2024-2. De esta población, se seleccionó una muestra representativa de 72 estudiantes, utilizando un método de muestreo probabilístico. Este tamaño muestral garantiza la representatividad de los resultados y permite realizar inferencias sobre la totalidad de la población estudiada.  
 
-En resumen, la metodología diseñada para esta investigación asegura un enfoque sistemático y riguroso para analizar la brecha digital en los estudiantes de la Facultad de Economía de la UNHEVAL. Los datos obtenidos serán fundamentales para caracterizar las desigualdades digitales y sentar las bases para la formulación de estrategias que promuevan la inclusión y equidad digital en la universidad.
+En resumen, la metodología diseñada para esta investigación asegura un enfoque sistemático y riguroso para analizar la brecha digital en los estudiantes de la Facultad de Economía de la Unheval. Los datos obtenidos serán fundamentales para caracterizar las desigualdades digitales y sentar las bases para la formulación de estrategias que promuevan la inclusión y equidad digital en la universidad.
 
-\subsection{Procedimiento de Recolección de Datos}
-
-La recolección de datos se llevará a cabo mediante la distribución del cuestionario en línea a través de la plataforma educativa de la universidad y por correo electrónico institucional. Se implementarán recordatorios periódicos para maximizar la tasa de respuesta. El período de recolección de datos se extenderá por 2 semanas, permitiendo a los estudiantes completar el cuestionario en el momento que les resulte más conveniente.
 
 \subsection{Análisis de Datos}
 
@@ -153,12 +151,8 @@ El proceso de análisis de datos incluirá las siguientes etapas:
 \begin{enumerate}
     \item Preparación y limpieza de datos: Utilizando pandas para la manipulación de datos y detección de valores atípicos o faltantes.
     \item Análisis descriptivo: Cálculo de estadísticas descriptivas (medias, medianas, desviaciones estándar) y generación de visualizaciones para comprender la distribución de las variables.
-    \item Análisis inferencial: Aplicación de pruebas estadísticas como correlaciones, pruebas t, ANOVA, y regresiones múltiples para explorar relaciones entre variables.
-    \item Análisis de conglomerados: Utilización de técnicas de machine learning no supervisado para identificar patrones en el uso de TIC entre los estudiantes.
     \item Visualización de resultados: Creación de gráficos y visualizaciones interactivas para representar los hallazgos de manera clara y efectiva.
 \end{enumerate}
-
-Se utilizará el nivel de significancia estándar de $\alpha = 0.05$ para todas las pruebas estadísticas. Los resultados se interpretarán en el contexto de la literatura existente y las teorías presentadas en el marco teórico.
 
 \subsection{Consideraciones Éticas}
 
@@ -168,6 +162,142 @@ Además, se tomarán medidas para garantizar la confidencialidad y seguridad de 
 
 Esta metodología proporciona un enfoque sistemático y riguroso para abordar los objetivos de la investigación, permitiendo una exploración profunda del uso y acceso a las TIC entre los estudiantes de economía, así como su relación con las competencias digitales y el rendimiento académico.
 
+\section{Análisis de resultados}
+
+\subsection{Analisis muestra}
+
+\subsubsection{Edad}
+
+\begin{table}[H]
+
+    \begin{tabular}{llccccccc}
+        \toprule
+        \textbf{N°} & \textbf{Intervalos} & \textbf{mi} & \textbf{fi} & \textbf{Fi} & \textbf{hi} & \textbf{Hi} & \textbf{pi (\%)} & \textbf{Pi (\%)} \\
+        \midrule
+        1 & [ 17.0 - 18.0 ) & 17.5 & 4  & 4  & 0.1 & 0.1 & 5.6  & 5.6  \\
+        2 & [ 18.0 - 19.0 ) & 18.5 & 5  & 9  & 0.1 & 0.1 & 6.9  & 12.5 \\
+        3 & [ 19.0 - 20.0 ) & 19.5 & 9  & 18 & 0.1 & 0.2 & 12.5 & 25.0 \\
+        4 & [ 20.0 - 21.0 ) & 20.5 & 11 & 29 & 0.2 & 0.4 & 15.3 & 40.3 \\
+        5 & [ 21.0 - 22.0 ) & 21.5 & 18 & 47 & 0.2 & 0.7 & 25.0 & 65.3 \\
+        6 & [ 22.0 - 23.0 ) & 22.5 & 16 & 63 & 0.2 & 0.9 & 22.2 & 87.5 \\
+        7 & [ 23.0 - 24.0 ) & 23.5 & 4  & 67 & 0.1 & 0.9 & 5.6  & 93.1 \\
+        8 & [ 24.0 - 25.0 ] & 24.5 & 5  & 72 & 0.1 & 1.0 & 6.9  & 100.0 \\
+        \bottomrule
+    \end{tabular}
+    \vspace{0.1cm}
+    \centering
+    \caption{Distribución de frecuencias (Edad)}
+    \label{tab:frecuencias}
+\end{table}
+
+\textbf{Pincipales estadisticos}
+
+\begin{itemize}
+    \item Media: 20.726851851851855
+    \item Moda: 21
+    \item Mediana: 21
+    \item Varianza: 3.259495027434842
+    \item Desviación estandar: 1.8054071638926334
+\end{itemize}
+
+\subsubsection{Genero y año de estudio}
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width=0.80\textwidth]{images/GeneroPorAño.png}
+    \end{center}
+    \label{fig:GeneroPorAño}
+    \caption{Comparación de la distribución de género por año de estudio}
+\end{figure}
+
+\subsection{Analisis brecha digital}
+
+\subsubsection{Acceso}
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width=0.80\textwidth]{images/DispositivosDisponibles.png}
+    \end{center}
+    \label{fig:DispositivosDisponibles}
+    \caption{Frecuencia de dispositivos disponibles}
+\end{figure}
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width=0.80\textwidth]{images/DistribucionConexion.png}
+    \end{center}
+    \label{fig:DistribucionConexion}
+    \caption{Tipos de conexión a intenet}
+\end{figure}
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width=0.80\textwidth]{images/FrecuenciaCalidadInternet.png}
+    \end{center}
+    \label{fig:FrecuenciaCalidadInternet}
+    \caption{Grafico de barras de la calida de internet}
+\end{figure}
+
+\subsubsection{Uso}
+
+\begin{table}[H]
+    \centering
+
+    \begin{tabular}{llccccccc}
+        \toprule
+        \textbf{Index} & \textbf{Intervalos} & \textbf{mi} & \textbf{fi} & \textbf{Fi} & \textbf{hi} & \textbf{Hi} & \textbf{pi (\%)} & \textbf{Pi (\%)} \\
+        \midrule
+        1 & [ 30.0 - 77.0 )  & 53.5  & 13 & 13 & 0.2 & 0.2 & 18.1 & 18.1 \\
+        2 & [ 77.0 - 124.0 ) & 100.5 & 14 & 27 & 0.2 & 0.4 & 19.4 & 37.5 \\
+        3 & [ 124.0 - 171.0 ) & 147.5 & 11 & 38 & 0.2 & 0.5 & 15.3 & 52.8 \\
+        4 & [ 171.0 - 218.0 ) & 194.5 & 14 & 52 & 0.2 & 0.7 & 19.4 & 72.2 \\
+        5 & [ 218.0 - 265.0 ) & 241.5 & 9  & 61 & 0.1 & 0.8 & 12.5 & 84.7 \\
+        6 & [ 265.0 - 312.0 ) & 288.5 & 2  & 63 & 0.0 & 0.9 & 2.8  & 87.5 \\
+        7 & [ 312.0 - 359.0 ) & 335.5 & 3  & 66 & 0.0 & 0.9 & 4.2  & 91.7 \\
+        8 & [ 359.0 - 406.0 ] & 382.5 & 6  & 72 & 0.1 & 1.0 & 8.3  & 100.0 \\
+        \bottomrule
+    \end{tabular}
+    \vspace{0.1cm}
+    \caption{Tabla de distribución de frecuencia (Promedio minutos al día)}
+    \label{tab:frecuenciaUso}
+\end{table}
+
+
+\textbf{Pincipales estadisticos}
+
+\begin{itemize}
+    \item Media: 171.80555555555554
+    \item Moda: 200
+    \item Mediana: 170
+    \item Varianza: 10103.684413580246
+    \item Desviación estandar: 100.51708518247158
+\end{itemize}
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width=0.80\textwidth]{images/DiagramOgiva.png}
+    \end{center}
+    \label{fig:DiagramOgiva}
+    \caption{Ogiva de frecuencia absoluta acumulada}
+\end{figure}
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width=0.80\textwidth]{images/PropositoUso.png}
+    \end{center}
+    \label{fig:PropositoUso}
+    \caption{Comparación de proposito de uso}
+\end{figure}
+
+\subsubsection{Habilidades Digitales}
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width=0.80\textwidth]{images/CompetenciasDigitales.png}
+    \end{center}
+    \label{fig:CompetenciasDigitales}
+    \caption{Comparación de habilidades digitales (escala)}
+\end{figure}
 
 \newpage
 
